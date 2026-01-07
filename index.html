@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SECOND CHARGE</title>
+
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header" role="banner">
+    <div class="container">
+      <h1 class="brand">SECOND CHARGE</h1>
+
+      <!-- SEARCH & FILTER -->
+      <form class="search-wrapper" role="search" aria-label="Pencarian produk">
+        
+        <!-- Search -->
+        <label for="searchInput" class="sr-only">Cari produk</label>
+        <input
+          type="search"
+          id="searchInput"
+          class="search-input"
+          placeholder="Cari produk, merek, atau model..."
+          aria-label="Cari produk"
+        >
+
+        <!-- Filter -->
+        <div class="filter-bar" aria-label="Filter dan pengurutan produk">
+          
+          <label for="priceSort" class="sr-only">Urutkan berdasarkan harga</label>
+          <select id="priceSort">
+            <option value="">Urutkan Harga</option>
+            <option value="asc">Termurah</option>
+            <option value="desc">Termahal</option>
+          </select>
+
+          <button
+            type="button"
+            id="clearFilterBtn"
+            class="btn btn-secondary"
+            aria-label="Reset semua filter"
+          >
+            Reset Filter
+          </button>
+
+        </div>
+      </form>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main class="container" id="main-content" role="main">
+
+    <!-- PRODUCT GRID -->
+    <section
+      class="product-grid"
+      id="productGrid"
+      aria-live="polite"
+      aria-label="Daftar produk"
+    >
+      <!-- Product card di-generate via JavaScript -->
+    </section>
+
+    <!-- PAGINATION -->
+    <nav
+      class="pagination"
+      id="pagination"
+      aria-label="Navigasi halaman produk"
+    ></nav>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <p>© 2026 SECOND CHARGE</p>
+  </footer>
+
+  <script type="module" src="assets/js/main.js"></script>
+</body>
+</html>
