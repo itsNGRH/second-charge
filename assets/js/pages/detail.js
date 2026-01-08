@@ -36,7 +36,7 @@ export async function renderProductDetail() {
 
       <br>
       <a 
-        href="https://wa.me/${product.whatsapp}"
+        href="https://wa.me/${product.whatsapp}?text=Permisi%20kak%2C%20mau%20tanya%20soal%20${product.name}.%20Masih%20ada%3F"
         target="_blank"
         rel="noopener noreferrer"
         class="btn btn-primary"
