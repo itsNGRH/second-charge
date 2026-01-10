@@ -219,8 +219,8 @@ img {
 }
 
 .product-image {
-  width: 620px;
-  height: 620px;
+  width: 100%;
+  height: 100%;
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-md);
   overflow: hidden;
@@ -370,4 +370,25 @@ img {
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
+}
+
+#scrollUpBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    border: none;
+    outline: none;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 16px;
+    border-radius: 50%;
+    font-size: 18px;
+    transition: background-color 0.3s, opacity 0.3s;
+}
+
+#scrollUpBtn:hover {
+    background-color: #555;
 }
